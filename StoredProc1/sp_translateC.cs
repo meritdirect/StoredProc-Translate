@@ -15,7 +15,7 @@ public partial class StoredProcedures
         // Put your code herestring result = null;
 
         inputString = System.Net.WebUtility.UrlEncode(inputString);
-        string url = string.Format(@"https://translation.googleapis.com/language/translate/v2?q={0}&target={1}&source={2}&key=AIzaSyCVYoFnJoIYZh53-Mm5-nJWTUA5beTEO_A", inputString, languageTo, languageFrom);
+        string url = string.Format(@"https://translation.googleapis.com/language/translate/v2?q={0}&target={1}&source={2}&key=", inputString, languageTo, languageFrom);
 
         string result = String.Empty;
 
@@ -44,7 +44,7 @@ public partial class StoredProcedures
 
         inputString = System.Net.WebUtility.UrlEncode(inputString);
 
-        string url = string.Format(@"https://translation.googleapis.com/language/translate/v2/detect?q={0}&key=AIzaSyCVYoFnJoIYZh53-Mm5-nJWTUA5beTEO_A", inputString);
+        string url = string.Format(@"https://translation.googleapis.com/language/translate/v2/detect?q={0}&key=", inputString);
 
         string result = String.Empty;
 
